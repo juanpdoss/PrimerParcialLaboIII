@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer Parcial </title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/pparcial.js"></script>
+</head>
+<body>
+    <div id="divPadre">
+        <div id="divSpinner" class="spinner" hidden>         
+        </div>
+        <div id="divTabla">
+            <table id="tabla">
+                <tr>
+                    <th>Nombre</th>
+                    <th>Cuatrimestre</th>
+                    <th>Fecha</th>
+                    <th>Turno</th>
+                </tr>
+            </table>
+        </div>
+        <div id="divPersona" hidden>      
+            <br>
+            <label for="txtNombre">Nombre</label>
+            <br>
+            <input type="text" name="txtNombre" id="txtNombre">
+            <br>
+            <label for="cboCuatrimestre">Cuatrimestre</label>
+            <select name="cboCuatrimestre" id="cboCuatrimestre">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <br>
+            <input type="radio" name="turno" id="Mañana" value="Mañana">
+            <label for="Mañana">Mañana</label>
+            <input type="radio" name="turno" id="Noche" value="Noche">
+            <label for="Noche">Noche</label>
+            <br>
+            <input type="date" name="txtFecha" id="txtFecha">
+            <br>
+            <br>
+            <input type="button" value="Modificar" id="btnModificar" class="btnVerde">
+            <input type="button" value="Eliminar" id="btnEliminar" class="btnRojo">
+        </div>  
+    </div>
+</body>
+</html>

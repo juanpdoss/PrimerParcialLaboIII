@@ -1,0 +1,119 @@
+#divPadre
+{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content:center;
+    align-items:center;
+    flex-direction: row;
+    position: relative;
+   
+
+}
+
+#divTabla
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+}
+
+#divPersona
+{ 
+   
+    width: 15%;
+    height: 35%;
+    background-color: #4c98af; 
+    z-index: 10;
+    position: absolute;
+    border-radius: 1rem;
+    box-shadow: 5px 10px;
+  
+}
+
+
+
+#tabla
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(240, 188, 140);
+    border:1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    
+   
+}
+
+/*los estilos de la tabla y la animacion cuando te paras en una fila son auspiciados por w3schools*/
+#tabla th,#tabla td
+{
+    border: 1px solid rgb(221, 221, 221);
+    padding: 8px;
+    
+}
+
+#tabla tr:nth-child(even)
+{
+    background-color: #f2f2f2;
+}
+
+#tabla tr:hover 
+{
+    background-color: #ddd;
+}
+
+#tabla th{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4c98af;
+    color: white;
+}
+
+.spinner 
+{
+  position: absolute;
+  z-index: 11;
+  width: 100%;
+  height: 100%;
+  opacity: 40%;
+  border: 16px solid #f3f3f3; 
+  border-top: 16px solid #3498db; 
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin
+{
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+.btnVerde
+{
+    background-color: rgb(0, 255, 76);
+    font-size: 1.5rem;
+    border-radius: 0.9rem;
+    font-family:Arial, Helvetica, sans-serif;;
+    
+}
+.btnRojo
+{
+    background-color: red;
+    font-size: 1.5rem;
+    border-radius: 0.9rem;
+    font-family:Arial, Helvetica, sans-serif;;
+
+}
+
+label
+{
+    font-family:Arial, Helvetica, sans-serif;;
+    font-size: large;
+
+}
